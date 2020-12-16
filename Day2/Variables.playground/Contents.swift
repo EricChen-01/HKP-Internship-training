@@ -106,3 +106,75 @@ enum activity{
 }
 
 let talkingTopic = activity.talking(topic: "stuff")
+
+// enum raw values
+enum planets: Int{
+    case Mercury = 1
+    case Venus
+    case Earth
+}
+
+let earth = planets(rawValue: 3)
+
+
+
+
+
+//Day 3 basic arithmetic      Swift is a type safe language, cannot add 2 different types
+let firstScore = 23
+let secondScore = 12
+
+let total = firstScore + secondScore
+
+let a = 3
+let b = "ayyy"
+
+let c = 4
+let d = "yayyy"
+
+let e1 = b + d
+let f = a + c
+
+        // you can add arrays too
+
+let g = ["herro", "Hello", "hey!"]
+let h = ["Bob", "Ross", "Hello"]
+let i = Set( g + h )
+print(i)
+
+"taylor" <= "Swift" // bascally the .compareTo() equivalent in java
+
+
+// if-else statement and print statements
+
+let a2 = 12
+
+if( a2 + 12 < 25 ){
+    print( (a2 + 12 < 25) )
+}
+
+
+// ternary operator
+(a2 + 12 < 25) ? print("hi") : print("no")
+
+print((a2 + 12 < 25) ?"hi":"no")
+
+
+//unlike java switch does end once it finds a math use keyword fallthrough to make it go to next case.
+let nice = 3
+switch (nice){
+case 1: print("1")
+case 2: print("2")
+case 3: print("3 is the answer! \(3)")
+case 4: print("4")
+default: print("default")
+}
+
+
+// ranges ... and ..<
+switch (nice){
+case 0...2: print(" between [0,2]")
+case 3..<4: print(" between[3,4)")
+default: break;
+}
+

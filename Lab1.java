@@ -11,7 +11,7 @@ public class Lab1 {
 			radius = sdtn.nextDouble(); //new value is radius
 			area = radius * radius * 3.14159;// compute area
 			
-			System.out.println("The area for the circle" + " of radius " + radius + " is " + area); //display results
+			System.out.println("Lab1 Branch" + "The area for the circle" + " of radius " + radius + " is " + area); //display results
 			sdtn.close();
 			
 		}

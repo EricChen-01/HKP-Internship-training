@@ -1,1 +1,1 @@
-# HKP-Internship-training
+# HKPS-Internship

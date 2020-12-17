@@ -54,6 +54,7 @@ var names = ["bob","ross","Eric","Chen","Test","Test"]
 
 var lst2 = Set(["bob","ross","ross","test"]) // duplicates get ignored
 
+
 //Tuples
 
 let name = (first: "Bob" ,last: "Ross")

@@ -178,3 +178,48 @@ case 3..<4: print(" between[3,4)")
 default: break;
 }
 
+
+//for loops
+
+for i in 1...10{
+    print(i)
+}
+
+
+// while loops
+
+var num = 0
+while(num < 10){
+    print(num)
+    num += 1
+}
+
+//repeat while loops
+
+var nb = 1
+repeat{
+    print(nb)
+    nb += 1
+}while(nb <= 10)
+
+print("Ready or not here I come!")
+
+
+//breaking loops and breaking nested loops
+outerloop: for i in 1...10{
+    for j in 1...10{
+        let product = i * j;
+        print(product)
+        if (product == 50){
+            break outerloop
+        }
+    }
+}
+
+
+for int in 1...10{
+    if(int % 2 != 0){
+        continue
+    }
+    print(int)
+}

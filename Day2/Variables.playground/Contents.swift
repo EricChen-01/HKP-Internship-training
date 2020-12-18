@@ -224,3 +224,25 @@ for int in 1...10{
     }
     print(int)
 }
+
+
+let group = ["hello", "OOP", "qwer"]
+
+let g2 = group.first?.uppercased()
+
+print(g2!)
+
+print("hi")
+
+
+
+func greeting(name: String) -> String?{
+    if(name == "bob"){
+        return nil
+    }else{
+        return "hello, person!"
+    }
+}
+
+let greet = greeting(name: "bob") ?? "no"
+print(greet)

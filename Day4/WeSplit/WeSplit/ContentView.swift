@@ -8,22 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
-    let tipPercentage = [10,20,30,40,50]
+    let tipPercentages = [0,10,15,20,25]
     @State private var checkAmount = ""
     @State private var numberOfPeople = 2
-    
-    
+    @State private var tipPercentage = 2
     
        var body: some View {
-        Form{
-            Section{
-                Text("Enter amount below:")
-                TextField("Amount", text: $checkAmount)
-                    .keyboardType(.decimalPad)
-            }
-            Section{
-                Text("everyone pays \(checkAmount)")
-            }
+        NavigationView {
+            Form{
+                Section{
+                    Text("Enter amount below:")
+                    TextField("Amount", text: $checkAmount)
+                        .keyboardType(.decimalPad)
+                    
+                    Picker("Number Of People", selection: $numberOfPeople){
+                        ForEach(2 ..< 100){
+                            Text("\($0)")
+                        }
+                    }
+                }
+                Section{
+                    Picker("Tip %", selection: $tipPercentage){
+                        ForEach(0 ..< tipPercentages.count){
+                            Text("\(self.tipPercentages[$0])%")
+                        }
+                    }.pickerStyle(SegmentedPickerStyle())
+                }
+                Section{
+                    Text("everyone pays \(checkAmount)")
+                }
+            }.navigationBarTitle("WeSplit")
         }
        }
 }

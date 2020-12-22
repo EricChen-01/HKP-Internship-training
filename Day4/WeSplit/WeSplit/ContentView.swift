@@ -32,7 +32,7 @@ struct ContentView: View {
         NavigationView {
             Form{
                 Section(header: Text("Enter total amount below")){
-                    TextField("Amount", text: $checkAmount)
+                    TextField("Amountf", text: $checkAmount)
                         .keyboardType(.decimalPad)
 
                     TextField("Number Of People (Default is 1)" , text: $people)

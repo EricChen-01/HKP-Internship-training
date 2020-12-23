@@ -52,7 +52,7 @@ struct ContentView: View {
                                             if((number - appChoice) == 0){
                                                 score -= 1
                                                 gameCount += 1
-                                            }else if (number - appChoice > 1){
+                                            }else if ( (number - appChoice > 1) || (appChoice - number) == 1){
                                                 score -= 1
                                                 gameCount += 1
                                             }else {
@@ -63,7 +63,7 @@ struct ContentView: View {
                                             if((number - appChoice) == 0){
                                                 score += 1
                                                 gameCount += 1
-                                            }else if (number - appChoice > 1){
+                                            }else if ( (number - appChoice > 1) || (appChoice - number == 1) ){
                                                 score += 1
                                                 gameCount += 1
                                             }else {
@@ -88,7 +88,6 @@ struct ContentView: View {
                             }
                             
                             Section{
-                                Text("Score is \(score)")
                                 Text("Game Number is \(gameCount)")
                             }
 

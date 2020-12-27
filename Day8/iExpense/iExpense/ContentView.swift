@@ -28,6 +28,7 @@ class Expenses: ObservableObject {
                 return
             }
         }
+    
         
         self.items = [ExpenseItem]()
     }

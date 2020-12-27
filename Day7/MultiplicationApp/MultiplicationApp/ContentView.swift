@@ -66,13 +66,20 @@ struct ContentView: View {
     }
     
         func ArrayOfQuestions() {
+            let i = gameSelection
+                for j in 1...12 {
+                    let newQuestion = Question(text: "How much is: \(i) * \(j) ?", answer: i * j)
+                    questions.append(newQuestion)
+                }
+            
+            /*
          for i in 1 ... gameSelection {
              for j in 1...12 {
                  let newQuestion = Question(text: "How much is: \(i) * \(j) ?", answer: i * j)
                  questions.append(newQuestion)
              }
          }
-            
+            */
             questions.shuffle()
 
      }

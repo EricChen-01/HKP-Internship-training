@@ -11,14 +11,15 @@ struct ContentView: View {
     @State private var isShowingAddHabit = false
     @ObservedObject var habitsList = Habits()
     var body: some View {
-        let list: [Activity] = habitsList.habits
         NavigationView{
             VStack{
                 List{
-                    ForEach(list){ item in
+                    ForEach(habitsList.habits){ item in
                         HStack{
-                            NavigationLink(destination: ActivityView(activity: item)) {
+                            NavigationLink(destination: ActivityView(activities: habitsList, activity: item)) {
                                 Text(item.title)
+                                Spacer()
+                                Text("\(item.count)")
                             }
                         }
                     }.onDelete(perform: removeItems)

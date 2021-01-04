@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40731A7725A3986E00D7314B /* LocationFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40731A7625A3986E00D7314B /* LocationFetcher.swift */; };
+		40731A7E25A39A3E00D7314B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40731A7D25A39A3E00D7314B /* MapView.swift */; };
+		40731A8125A3B67700D7314B /* MKPointAnnotation-Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40731A8025A3B67700D7314B /* MKPointAnnotation-Codable.swift */; };
 		409FD98C25A2632D000B99A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD98B25A2632D000B99A1 /* AppDelegate.swift */; };
 		409FD98E25A2632D000B99A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD98D25A2632D000B99A1 /* SceneDelegate.swift */; };
 		409FD99025A2632D000B99A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD98F25A2632D000B99A1 /* ContentView.swift */; };
@@ -16,12 +19,14 @@
 		409FD99B25A2632F000B99A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409FD99925A2632F000B99A1 /* LaunchScreen.storyboard */; };
 		409FD9A425A26344000B99A1 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD9A325A26344000B99A1 /* ImagePicker.swift */; };
 		409FD9A725A268A5000B99A1 /* AddPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD9A625A268A5000B99A1 /* AddPictureView.swift */; };
-		409FD9AA25A271F9000B99A1 /* PictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD9A925A271F9000B99A1 /* PictureView.swift */; };
 		409FD9AD25A274CE000B99A1 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD9AC25A274CE000B99A1 /* DetailView.swift */; };
 		409FD9B025A27F47000B99A1 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409FD9AF25A27F47000B99A1 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		40731A7625A3986E00D7314B /* LocationFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFetcher.swift; sourceTree = "<group>"; };
+		40731A7D25A39A3E00D7314B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		40731A8025A3B67700D7314B /* MKPointAnnotation-Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKPointAnnotation-Codable.swift"; sourceTree = "<group>"; };
 		409FD98825A2632D000B99A1 /* RememberNames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberNames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409FD98B25A2632D000B99A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409FD98D25A2632D000B99A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +38,6 @@
 		409FD99C25A2632F000B99A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		409FD9A325A26344000B99A1 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		409FD9A625A268A5000B99A1 /* AddPictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPictureView.swift; sourceTree = "<group>"; };
-		409FD9A925A271F9000B99A1 /* PictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureView.swift; sourceTree = "<group>"; };
 		409FD9AC25A274CE000B99A1 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		409FD9AF25A27F47000B99A1 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,10 +75,12 @@
 				409FD98B25A2632D000B99A1 /* AppDelegate.swift */,
 				409FD98D25A2632D000B99A1 /* SceneDelegate.swift */,
 				409FD98F25A2632D000B99A1 /* ContentView.swift */,
-				409FD9A925A271F9000B99A1 /* PictureView.swift */,
 				409FD9A625A268A5000B99A1 /* AddPictureView.swift */,
+				40731A8025A3B67700D7314B /* MKPointAnnotation-Codable.swift */,
 				409FD9AC25A274CE000B99A1 /* DetailView.swift */,
 				409FD9AF25A27F47000B99A1 /* Helper.swift */,
+				40731A7625A3986E00D7314B /* LocationFetcher.swift */,
+				40731A7D25A39A3E00D7314B /* MapView.swift */,
 				409FD9A325A26344000B99A1 /* ImagePicker.swift */,
 				409FD99425A2632F000B99A1 /* Assets.xcassets */,
 				409FD99925A2632F000B99A1 /* LaunchScreen.storyboard */,
@@ -165,13 +171,15 @@
 			files = (
 				409FD98C25A2632D000B99A1 /* AppDelegate.swift in Sources */,
 				409FD9AD25A274CE000B99A1 /* DetailView.swift in Sources */,
+				40731A8125A3B67700D7314B /* MKPointAnnotation-Codable.swift in Sources */,
 				409FD9A725A268A5000B99A1 /* AddPictureView.swift in Sources */,
 				409FD99325A2632D000B99A1 /* RememberNames.xcdatamodeld in Sources */,
 				409FD9A425A26344000B99A1 /* ImagePicker.swift in Sources */,
 				409FD9B025A27F47000B99A1 /* Helper.swift in Sources */,
-				409FD9AA25A271F9000B99A1 /* PictureView.swift in Sources */,
 				409FD98E25A2632D000B99A1 /* SceneDelegate.swift in Sources */,
+				40731A7E25A39A3E00D7314B /* MapView.swift in Sources */,
 				409FD99025A2632D000B99A1 /* ContentView.swift in Sources */,
+				40731A7725A3986E00D7314B /* LocationFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

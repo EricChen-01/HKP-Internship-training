@@ -18,8 +18,8 @@ class helper {
         return paths[0]
     }
     
-    static  func loadImage(pathName: String) -> Data? {
-            let fileName = getDocumentsDirectory().appendingPathComponent(pathName)
+    static  func loadImage(imageIdName: String) -> Data? {
+            let fileName = getDocumentsDirectory().appendingPathComponent(imageIdName)
             do {
                 let data = try Data(contentsOf: fileName)
                 return data

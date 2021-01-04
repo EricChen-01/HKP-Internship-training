@@ -37,6 +37,7 @@ struct ContentView: View {
                     Rectangle()
                         .fill(Color.secondary)
                     
+                    
                     if image != nil {
                         image?
                             .resizable()

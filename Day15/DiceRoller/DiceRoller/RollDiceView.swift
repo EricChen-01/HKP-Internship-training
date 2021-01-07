@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RollDiceView: View {
     @EnvironmentObject var dices: Dices
+    @State private var highEnd = 6
     
     @State var random = 1
     var body: some View {
@@ -26,8 +27,8 @@ struct RollDiceView: View {
                         .padding()
                 }
                 VStack{
-                    Button("Roll Dice"){
-                        random = Int.random(in: 1...6)
+                    Button("Roll \(highEnd) sided Dice"){
+                        random = Int.random(in: 1 ... highEnd)
                         
                         let newDice = Dice()
                         newDice.number = random
@@ -40,6 +41,27 @@ struct RollDiceView: View {
                     }){
                         Text("🎲 Reset")
                     })
+                    .padding()
+                    
+                    Button("4 Sided Dice"){
+                        highEnd = 4
+                    }
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
+                    .padding()
+                    
+                    Button("6 Sided Dice"){
+                        highEnd = 6
+                    }
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
+                    .padding()
+                    
+                    Button("8 Sided Dice"){
+                        highEnd = 8
+                    }
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
                     .padding()
                 }
                 Spacer()
